@@ -1,0 +1,4 @@
+secrets.h
+*.b#*
+*.s#*
+CAMOutputs/*
