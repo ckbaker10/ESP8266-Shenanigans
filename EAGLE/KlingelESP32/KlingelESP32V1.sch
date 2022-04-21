@@ -9487,8 +9487,8 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <instance part="GND7" gate="1" x="-58.42" y="27.94" smashed="yes">
 <attribute name="VALUE" x="-60.96" y="25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="VCC" x="17.78" y="160.02" smashed="yes">
-<attribute name="VALUE" x="15.24" y="157.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="17.78" y="162.56" smashed="yes">
+<attribute name="VALUE" x="15.24" y="160.02" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="G$1" x="17.78" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.2814" y="146.05" size="1.778" layer="95" rot="R90"/>
@@ -9870,6 +9870,12 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <junction x="88.9" y="119.38"/>
 <label x="88.9" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="160.02" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
+<label x="17.78" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -9937,13 +9943,6 @@ Source: http://www.fairchildsemi.com/ds/FD/FDN360P.pdf</description>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="-58.42" y1="60.96" x2="-58.42" y2="68.58" width="0.1524" layer="91"/>
 <label x="-58.42" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="157.48" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IO14" class="0">
